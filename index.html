@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawit's Project Portfolio</title>
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Keyframe animation for the pulse effect on the title */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .75; }
+        }
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Main container for the portfolio, centered and with a sleek, semi-transparent background -->
+    <div class="bg-white bg-opacity-95 rounded-xl shadow-2xl p-8 md:p-12 max-w-4xl w-full my-8 border border-gray-200">
+
+        <!-- Header section with a vibrant, animated title -->
+        <header class="text-center mb-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-orange-400 to-red-500 mb-4 animate-pulse">
+                Dawit's Project Portfolio
+            </h1>
+            <p class="text-lg text-gray-700">Showcasing my passion for web development and design.</p>
+        </header>
+
+        <!-- Projects section using a responsive grid layout -->
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1: Lalibela Website -->
+            <div class="project-card bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl border-t-4 border-orange-500">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Project 1: Lalibela History Website</h2>
+                <p class="text-gray-600 mb-4">
+                    This website presents the historical and cultural significance of Lalibela, Ethiopia. It includes pages with images, historical facts, multimedia content (videos), and feedback forms. The design is clean and informative, aimed at educating visitors about the heritage site.
+                </p>
+                <p class="text-sm font-semibold text-gray-700 mb-2">GitHub Link:</p>
+                <a href="https://dawit1234.github.io/The-Lalibela-Church-Exploring-the-Timeless-Marvels-Online/" target="_blank" class="inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 shadow-md hover:shadow-lg">
+                    View Lalibela Website
+                </a>
+            </div>
+
+            <!-- Project 2: Spiritual Distance Education Website -->
+            <div class="project-card bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl border-t-4 border-amber-500">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Project 2: Distance Education Website</h2>
+                <p class="text-gray-600 mb-4">
+                    A sample website for a spiritual distance learning institution. It includes details about the school’s founding, available courses (like Theology and Religious Studies), student registration options, teacher info, and multimedia learning materials (books and videos). It shows how web design can support remote education.
+                </p>
+                <p class="text-sm font-semibold text-gray-700 mb-2">GitHub Link:</p>
+                <a href="https://dawit1234.github.io/Spiritual-Distance-Education/" target="_blank" class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 shadow-md hover:shadow-lg">
+                    View Spiritual Distance Education Project
+                </a>
+            </div>
+
+            <!-- Project 3: Student Registration Form With Military Discount -->
+            <div class="project-card bg-white rounded-lg shadow-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl border-t-4 border-red-500">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Project 3: College Registration Form</h2>
+                <p class="text-gray-600 mb-4">
+                    This form was created using both HTML and Jotform to simulate a complete college registration system. It includes fields for personal details, contact information, gender selection, and registration date. In addition to demonstrating practical web form creation for collecting user input, the website also highlights a military discount, showing support for those who have served.
+                </p>
+                <p class="text-sm font-semibold text-gray-700 mb-2">GitHub Link:</p>
+                <a href="https://dawit1234.github.io/Student-Registration-Form-With-MilitaryDiscount/" target="_blank" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 shadow-md hover:shadow-lg">
+                    View Student Registration Form
+                </a>
+            </div>
+        </main>
+
+        <!-- Optional: Add a footer -->
+        <footer class="text-center mt-12 text-gray-600 text-sm">
+            <p>&copy; 2025 Dawit. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
